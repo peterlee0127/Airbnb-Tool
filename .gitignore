@@ -1,0 +1,15 @@
+*.pdf
+room
+*.csr
+*.key
+ssl
+ssl_file
+Doc
+id.json
+location.json
+roomID-*.html
+hosting.json
+rooms.json
+calendar.json
+public/js/dist
+.log
