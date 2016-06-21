@@ -6,12 +6,17 @@ A easy tool to download airbnb data.
 2: $ npm install		
 <hr>
 <h3>Search by Location</h3>
-search.js	
+search.js		
 
-<code>$ node search 'location' startPage endPage</code>		
+<code>$ node search 'location' startPage endPage</code>	
 <code>$ node search Tokyo 1 200</code>
 
 <hr>
 
+<h3>Search By Guest ID</h3>	
+<code>$ node searchFromID.js</code>		
+you can define the start id at 'temp/id.json'
+
+<hr>
 
 all the data will post to server which defined at data.js
