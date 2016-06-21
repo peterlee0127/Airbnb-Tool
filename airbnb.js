@@ -2,7 +2,6 @@
 const airbnb = require('airapi');
 const filter = require('./filter.js');
 const data = require('./data.js');
-const config = require('./config.js');
 
 var existIDList = [];
 function getRoomID() {
