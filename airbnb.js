@@ -2,18 +2,10 @@
 const airbnb = require('airapi');
 const filter = require('./filter.js');
 const data = require('./data.js');
+const file = require('./file.js');
 
 var existIDList = [];
 function getRoomID() {
-    data.getRoomIDList(function(IDArray){
-        if(IDArray!=null) {
-            existIDList = IDArray;
-            console.log("exist:"+existIDList.length);
-        }else {
-            console.log("get exist ID List fail,try again");
-            getRoomID();
-        }
-    });
 }
 
 function searchByIDArray(array,callback) {
@@ -83,6 +75,11 @@ function searchInfo(id,callback) {
     });
 }
 function postDataAndCalendar(id,info) {
+    file.writeFile(id,info);
+    getCalendar(id,function(){
+    
+    });
+    return;
     data.postData(id,info,function(success) {
         if(success) {
             getCalendar(id,function(){
