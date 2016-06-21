@@ -7,7 +7,8 @@ A easy tool to download airbnb data.
 <hr>
 <h3>Search by Location</h3>
 search.js	
-<code>$ node search 'location' startPage endPage</code>
+
+<code>$ node search 'location' startPage endPage</code>		
 <code>$ node search Tokyo 1 200</code>
 
 <hr>
